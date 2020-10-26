@@ -13,7 +13,7 @@ for i in $(find . -name ".git" -type d | cut -c 3-); do
 
     git pull;
     git submodule init;
-    git submodule update --remote;
+    git submodule update --remote --recursive;
 
     cd "$CUR_DIR"
 done
